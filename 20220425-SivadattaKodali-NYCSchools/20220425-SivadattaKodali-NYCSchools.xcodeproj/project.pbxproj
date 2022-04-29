@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C715B0F7281B7E2C008E73AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715B0F6281B7E2C008E73AF /* Constants.swift */; };
+		C7839A1E2818D7C400789A2B /* SchoolDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7839A1D2818D7C400789A2B /* SchoolDetailsViewController.swift */; };
+		C7839A202818DE9C00789A2B /* SchoolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7839A1F2818DE9C00789A2B /* SchoolListViewModel.swift */; };
+		C7839A222818E22200789A2B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7839A212818E22200789A2B /* Observable.swift */; };
+		C7839A242819C77300789A2B /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7839A232819C77300789A2B /* SchoolDetailsViewModel.swift */; };
 		C7D7853428178CCB00C91692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7853328178CCB00C91692 /* AppDelegate.swift */; };
 		C7D7853628178CCB00C91692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7853528178CCB00C91692 /* SceneDelegate.swift */; };
 		C7D7853828178CCB00C91692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7853728178CCB00C91692 /* ViewController.swift */; };
@@ -16,6 +21,9 @@
 		C7D7854B28178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7854A28178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsTests.swift */; };
 		C7D7855528178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7855428178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsUITests.swift */; };
 		C7D7855728178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7855628178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsUITestsLaunchTests.swift */; };
+		C7D7856C2817908400C91692 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7856B2817908400C91692 /* School.swift */; };
+		C7D7856E281796FC00C91692 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7856D281796FC00C91692 /* NetworkManager.swift */; };
+		C7D7857028179E4100C91692 /* SATResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7856F28179E4100C91692 /* SATResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C715B0F6281B7E2C008E73AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C7839A1D2818D7C400789A2B /* SchoolDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewController.swift; sourceTree = "<group>"; };
+		C7839A1F2818DE9C00789A2B /* SchoolListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListViewModel.swift; sourceTree = "<group>"; };
+		C7839A212818E22200789A2B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		C7839A232819C77300789A2B /* SchoolDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewModel.swift; sourceTree = "<group>"; };
 		C7D7853028178CCB00C91692 /* 20220425-SivadattaKodali-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20220425-SivadattaKodali-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D7853328178CCB00C91692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D7853528178CCB00C91692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,9 @@
 		C7D7855028178CCC00C91692 /* 20220425-SivadattaKodali-NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20220425-SivadattaKodali-NYCSchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D7855428178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0220425_SivadattaKodali_NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		C7D7855628178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0220425_SivadattaKodali_NYCSchoolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7D7856B2817908400C91692 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		C7D7856D281796FC00C91692 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C7D7856F28179E4100C91692 /* SATResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +115,14 @@
 		C7D7853228178CCB00C91692 /* 20220425-SivadattaKodali-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				C7D7856A28178FC100C91692 /* Network */,
+				C7D7856928178F9C00C91692 /* ViewModel */,
+				C7D7856728178F8A00C91692 /* Model */,
+				C7D7856528178F7B00C91692 /* Controller */,
 				C7D7853328178CCB00C91692 /* AppDelegate.swift */,
 				C7D7853528178CCB00C91692 /* SceneDelegate.swift */,
-				C7D7853728178CCB00C91692 /* ViewController.swift */,
+				C7839A212818E22200789A2B /* Observable.swift */,
+				C715B0F6281B7E2C008E73AF /* Constants.swift */,
 				C7D7853928178CCB00C91692 /* Main.storyboard */,
 				C7D7853C28178CCC00C91692 /* Assets.xcassets */,
 				C7D7853E28178CCC00C91692 /* LaunchScreen.storyboard */,
@@ -125,6 +146,41 @@
 				C7D7855628178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsUITestsLaunchTests.swift */,
 			);
 			path = "20220425-SivadattaKodali-NYCSchoolsUITests";
+			sourceTree = "<group>";
+		};
+		C7D7856528178F7B00C91692 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7853728178CCB00C91692 /* ViewController.swift */,
+				C7839A1D2818D7C400789A2B /* SchoolDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C7D7856728178F8A00C91692 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7856B2817908400C91692 /* School.swift */,
+				C7D7856F28179E4100C91692 /* SATResults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7D7856928178F9C00C91692 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7839A1F2818DE9C00789A2B /* SchoolListViewModel.swift */,
+				C7839A232819C77300789A2B /* SchoolDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7D7856A28178FC100C91692 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7856D281796FC00C91692 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +251,7 @@
 				TargetAttributes = {
 					C7D7852F28178CCB00C91692 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 					C7D7854528178CCC00C91692 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -258,9 +315,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7839A1E2818D7C400789A2B /* SchoolDetailsViewController.swift in Sources */,
+				C715B0F7281B7E2C008E73AF /* Constants.swift in Sources */,
 				C7D7853828178CCB00C91692 /* ViewController.swift in Sources */,
+				C7D7857028179E4100C91692 /* SATResults.swift in Sources */,
+				C7839A242819C77300789A2B /* SchoolDetailsViewModel.swift in Sources */,
 				C7D7853428178CCB00C91692 /* AppDelegate.swift in Sources */,
+				C7839A222818E22200789A2B /* Observable.swift in Sources */,
+				C7839A202818DE9C00789A2B /* SchoolListViewModel.swift in Sources */,
+				C7D7856E281796FC00C91692 /* NetworkManager.swift in Sources */,
 				C7D7853628178CCB00C91692 /* SceneDelegate.swift in Sources */,
+				C7D7856C2817908400C91692 /* School.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +437,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -425,6 +491,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -435,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 78UZC2AU4H;
@@ -453,6 +521,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kodali.sample.-0220425-SivadattaKodali-NYCSchools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,6 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 78UZC2AU4H;
@@ -481,6 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kodali.sample.-0220425-SivadattaKodali-NYCSchools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
