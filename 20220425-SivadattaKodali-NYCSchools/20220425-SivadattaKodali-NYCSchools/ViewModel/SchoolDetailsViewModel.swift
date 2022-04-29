@@ -8,19 +8,26 @@
 import Foundation
 
 struct SchoolDetailsViewModel{
-    var schoolDetails : Observable<[SchoolViewModel]> = Observable([])
+    var schoolViewModel : Observable<[SchoolViewModel]> = Observable([])
     
     /// The method to fetch the SAT scores 
     func fetchSATScores(){
         NetworkManager.fetchAPI(with: AppConstants.satScoresUrl, type: SATResults.self) {satResults, error in
             if let satScores = satResults {
-                self.schoolDetails.value = satScores.compactMap({
+                self.schoolViewModel.value = satScores.compactMap({
                     SchoolViewModel(dbn: $0.dbn ?? "1", schoolName: $0.school_name ?? "N/A", numOfSatTestTakers: $0.num_of_sat_test_takers ?? "N/A", satCriticalReadingAvgScore: $0.sat_critical_reading_avg_score ?? "N/A", satMathAvgScore: $0.sat_math_avg_score ?? "N/A", satWritingAvgScore: $0.sat_writing_avg_score ?? "N/A")
                 })
             }else{
-                self.schoolDetails.value = nil
+                self.schoolViewModel.value = nil
             }
         }
+    }
+    
+    func satResultsAvailable(results:[SchoolViewModel]?, for school:String?) -> Int?{
+        if let satResults = results, school != nil{
+            return satResults.firstIndex(where: { $0.dbn == school}) ?? nil
+        }
+        return nil
     }
 }
 

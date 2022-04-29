@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SchoolListViewController: UIViewController {
     
     @IBOutlet var tableView : UITableView!
     private var schoolListViewModel = SchoolListViewModel()
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         }
         
         //Bind the view to get updates when schoolDetailsViewModel value changes
-        self.schoolDetailsViewModel.schoolDetails.bind {[weak self] _ in
+        self.schoolDetailsViewModel.schoolViewModel.bind {[weak self] _ in
             self?.reloadTableData()
         }
         
@@ -45,10 +45,11 @@ class ViewController: UIViewController {
             let selectedIndexRow = tableView.indexPathForSelectedRow?.row
         {
            let schoolTableViewCellModel =  schoolListViewModel.schoolsTableViewCellViewModel.value?[selectedIndexRow]
+           let schoolViewModel = schoolDetailsViewModel.schoolViewModel
             
            // Get the school details array index by checking if the school dbn exists in SAT results array
-           if let index = schoolDetailsViewModel.schoolDetails.value?.firstIndex(where: { $0.dbn == schoolTableViewCellModel?.dbn}) {
-                destination.schoolViewModel = schoolDetailsViewModel.schoolDetails.value?[index]
+           if let index = schoolDetailsViewModel.satResultsAvailable(results: schoolViewModel.value, for: schoolTableViewCellModel?.dbn) {
+                destination.schoolViewModel = schoolDetailsViewModel.schoolViewModel.value?[index]
            }else{
                self.showAlert(title:AppConstants.errorTitle , message: AppConstants.schoolDetailsErrorMsg)
                destination.schoolViewModel = SchoolViewModel(dbn: "1", schoolName:"N/A", numOfSatTestTakers: "N/A", satCriticalReadingAvgScore:"N/A", satMathAvgScore:"N/A", satWritingAvgScore:"N/A")
@@ -57,14 +58,14 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController : UITableViewDelegate {
+extension SchoolListViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
 
-extension ViewController : UITableViewDataSource {
+extension SchoolListViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return schoolListViewModel.schoolsTableViewCellViewModel.value?.count ?? 0
@@ -78,7 +79,7 @@ extension ViewController : UITableViewDataSource {
     
 }
 
-extension ViewController {
+extension SchoolListViewController {
     
     /// Show Alert with title and message
     /// - Parameters:

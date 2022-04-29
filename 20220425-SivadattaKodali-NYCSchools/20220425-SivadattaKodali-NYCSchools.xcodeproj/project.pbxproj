@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C715B0F7281B7E2C008E73AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715B0F6281B7E2C008E73AF /* Constants.swift */; };
+		C715B0F9281BA81D008E73AF /* SchoolsListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715B0F8281BA81D008E73AF /* SchoolsListTest.swift */; };
+		C715B0FB281BAB96008E73AF /* SATResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C715B0FA281BAB96008E73AF /* SATResultTest.swift */; };
 		C7839A1E2818D7C400789A2B /* SchoolDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7839A1D2818D7C400789A2B /* SchoolDetailsViewController.swift */; };
 		C7839A202818DE9C00789A2B /* SchoolListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7839A1F2818DE9C00789A2B /* SchoolListViewModel.swift */; };
 		C7839A222818E22200789A2B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7839A212818E22200789A2B /* Observable.swift */; };
 		C7839A242819C77300789A2B /* SchoolDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7839A232819C77300789A2B /* SchoolDetailsViewModel.swift */; };
 		C7D7853428178CCB00C91692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7853328178CCB00C91692 /* AppDelegate.swift */; };
 		C7D7853628178CCB00C91692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7853528178CCB00C91692 /* SceneDelegate.swift */; };
-		C7D7853828178CCB00C91692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7853728178CCB00C91692 /* ViewController.swift */; };
+		C7D7853828178CCB00C91692 /* SchoolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7853728178CCB00C91692 /* SchoolListViewController.swift */; };
 		C7D7853B28178CCB00C91692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D7853928178CCB00C91692 /* Main.storyboard */; };
 		C7D7853D28178CCC00C91692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D7853C28178CCC00C91692 /* Assets.xcassets */; };
 		C7D7854028178CCC00C91692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D7853E28178CCC00C91692 /* LaunchScreen.storyboard */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		C715B0F6281B7E2C008E73AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C715B0F8281BA81D008E73AF /* SchoolsListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsListTest.swift; sourceTree = "<group>"; };
+		C715B0FA281BAB96008E73AF /* SATResultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATResultTest.swift; sourceTree = "<group>"; };
 		C7839A1D2818D7C400789A2B /* SchoolDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailsViewController.swift; sourceTree = "<group>"; };
 		C7839A1F2818DE9C00789A2B /* SchoolListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListViewModel.swift; sourceTree = "<group>"; };
 		C7839A212818E22200789A2B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -52,7 +56,7 @@
 		C7D7853028178CCB00C91692 /* 20220425-SivadattaKodali-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20220425-SivadattaKodali-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D7853328178CCB00C91692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D7853528178CCB00C91692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7D7853728178CCB00C91692 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7D7853728178CCB00C91692 /* SchoolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListViewController.swift; sourceTree = "<group>"; };
 		C7D7853A28178CCB00C91692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7D7853C28178CCC00C91692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7D7853F28178CCC00C91692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				C7D7854A28178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsTests.swift */,
+				C715B0F8281BA81D008E73AF /* SchoolsListTest.swift */,
+				C715B0FA281BAB96008E73AF /* SATResultTest.swift */,
 			);
 			path = "20220425-SivadattaKodali-NYCSchoolsTests";
 			sourceTree = "<group>";
@@ -151,7 +157,7 @@
 		C7D7856528178F7B00C91692 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C7D7853728178CCB00C91692 /* ViewController.swift */,
+				C7D7853728178CCB00C91692 /* SchoolListViewController.swift */,
 				C7839A1D2818D7C400789A2B /* SchoolDetailsViewController.swift */,
 			);
 			path = Controller;
@@ -317,7 +323,7 @@
 			files = (
 				C7839A1E2818D7C400789A2B /* SchoolDetailsViewController.swift in Sources */,
 				C715B0F7281B7E2C008E73AF /* Constants.swift in Sources */,
-				C7D7853828178CCB00C91692 /* ViewController.swift in Sources */,
+				C7D7853828178CCB00C91692 /* SchoolListViewController.swift in Sources */,
 				C7D7857028179E4100C91692 /* SATResults.swift in Sources */,
 				C7839A242819C77300789A2B /* SchoolDetailsViewModel.swift in Sources */,
 				C7D7853428178CCB00C91692 /* AppDelegate.swift in Sources */,
@@ -334,6 +340,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D7854B28178CCC00C91692 /* _0220425_SivadattaKodali_NYCSchoolsTests.swift in Sources */,
+				C715B0FB281BAB96008E73AF /* SATResultTest.swift in Sources */,
+				C715B0F9281BA81D008E73AF /* SchoolsListTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
